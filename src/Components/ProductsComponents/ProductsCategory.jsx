@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import Products from './AllProducts/ProDucts';
+import Products from '../ProductsComponents/AllProducts/Products'
 import CategoryName from './CategoryName/CategoryName';
 
 const ProductsCategory = () => {
@@ -40,7 +40,8 @@ const ProductsCategory = () => {
 
       {/* Products Grid / List */}
       <div className="mt-4">
-        <Products products={products} select={select} />
+        {/* <Produc products={products} select={select} /> */}
+        <Products products={products} select={select}></Products>
       </div>
     </div>
 
