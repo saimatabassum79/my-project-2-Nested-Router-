@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 
 import { FaCartShopping, FaStar } from 'react-icons/fa6';
-import useData from '../Hooks/UseData';
+import useData from '../hook/useData';
+
+
 
 
 const Countdown = ({ ml1, ml2, weidth, p, text, top ,t}) => {

@@ -1,6 +1,7 @@
 import React from 'react';
-import useData from '../Hooks/UseData';
+
 import { FaStar } from 'react-icons/fa6';
+import useData from '../hook/useData';
 
 const NewProducts = () => {
     const { products } = useData();

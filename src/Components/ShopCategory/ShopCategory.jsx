@@ -1,5 +1,6 @@
 import React from 'react';
-import useData from '../Hooks/UseData';
+import useData from '../hook/useData';
+
 
 const ShopCategory = ({handleCategory}) => {
     const {category}=useData();

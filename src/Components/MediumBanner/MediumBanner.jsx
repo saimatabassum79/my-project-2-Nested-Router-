@@ -2,7 +2,7 @@ import React from 'react';
 import bg1 from '../../assets/banner-1.png'
 import bg2 from '../../assets/banner-2.png'
 import bg3 from '../../assets/banner-3.png'
-import { FaArrowRight } from 'react-icons/fa6';
+
 import Button from '../Shared/Button';
 
 

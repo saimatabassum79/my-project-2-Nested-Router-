@@ -4,7 +4,7 @@ import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
 import sliderImg1 from '../../assets/slider-1.png';
 import sliderImg2 from '../../assets/slider-2 (1).png';
-import img from '../../assets/slider-2 (1).png'
+
 import SendImg from '../../assets/icon-email-2.svg';
 
 const Banner = () => {

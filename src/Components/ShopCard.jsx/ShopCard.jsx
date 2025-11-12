@@ -1,6 +1,7 @@
 
 import { FaAngleDown, FaCartShopping, FaStar } from 'react-icons/fa6';
-import useData from '../Hooks/UseData';
+import useData from '../hook/useData';
+
 
 
 
