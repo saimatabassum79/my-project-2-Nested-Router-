@@ -52,7 +52,7 @@ const Contact = () => {
 
                         <h2 className="text-lg font-bold text-[#253D4E] mt-6">04. General Inquiries</h2>
                         <p className="mt-2 text-[#7E7E7E] lg:text-[13px] text-sm">
-                            Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem.
+                            Proin ullamcorper pretium oeri. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem.
                         </p>
                     </div>
                 </div>
