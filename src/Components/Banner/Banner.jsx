@@ -3,7 +3,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
 import sliderImg1 from '../../assets/slider-1.png';
-import sliderImg2 from '../../assets/slider-2 (1).png';
+import sliderImg3 from '../../assets/slider-2 .png';
 
 import SendImg from '../../assets/icon-email-2.svg';
 
@@ -77,13 +77,13 @@ const Banner = () => {
         <SwiperSlide>
           <div className="relative">
             <img
-              src={sliderImg2}
+              src={sliderImg3}
               alt=""
               className="w-full object-cover rounded-md hidden sm:block"
             />
 
             {/* ✅ Mobile version */}
-            <div className="sm:hidden  bg-cover rounded-xl p-5 flex flex-col items-center text-center"  style={{ backgroundImage: `url(${sliderImg1})` }}>
+            <div className="sm:hidden  bg-cover rounded-xl p-5 flex flex-col items-center text-center"  style={{backgroundImage : `url(${sliderImg3})`}}>
               <h1 className="text-[#253D4E] text-lg font-semibold">
                 Fresh Vegetables <br /> Big discount
               </h1>

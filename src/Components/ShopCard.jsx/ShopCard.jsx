@@ -1,6 +1,7 @@
 
 import { FaAngleDown, FaCartShopping, FaStar } from 'react-icons/fa6';
 import useData from '../hook/useData';
+import { Link } from 'react-router';
 
 
 
@@ -14,7 +15,7 @@ const ShopCard = ({select}) => {
            
             {
                 filter.slice(0,10).map(product => (
-                    <div>
+                   <Link to={`/products/${product.id}`}> <div>
                         <div className="card bg-base-100 h-[400px] relative transition cursor-pointer  mb-4 hover:shadow-md border border-gray-200">
 
                             <figure>
@@ -50,6 +51,7 @@ const ShopCard = ({select}) => {
                             </div>
                         </div>
                     </div>
+                   </Link>
                 ))
             }
         </div>
