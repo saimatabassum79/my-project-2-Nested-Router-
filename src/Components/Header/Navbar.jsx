@@ -94,10 +94,10 @@ const Navbar = () => {
           <li><NavLink to="/" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Home</NavLink></li>
           <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>About</NavLink></li>
           <li><NavLink to="/shop" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Shop</NavLink></li>
-          <li><NavLink to="/vendors" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Vendors</NavLink></li>
+          <li><NavLink to="/vendor" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Vendors</NavLink></li>
           <li><NavLink to="/mega" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Mega Menu</NavLink></li>
           <li><NavLink to="/blog" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Blog</NavLink></li>
-          <li><NavLink to="/pages" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Pages</NavLink></li>
+          <li><NavLink to="/page" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Pages</NavLink></li>
           <li><NavLink to="/contact" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Contact</NavLink></li>
         </ul>
 
