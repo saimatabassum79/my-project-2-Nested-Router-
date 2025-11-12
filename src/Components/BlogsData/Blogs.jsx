@@ -1,8 +1,15 @@
-import React from 'react';
-import useData from '../Hooks/UseData';
+import React, { useEffect, useState } from 'react';
+
+
 
 const Blogs = () => {
-    const { blogs } = useData();
+        const [blogs, setBlogs] = useState([])
+    useEffect(() => {
+        fetch('/BlogsData.json')
+            .then(res => res.json())
+            .then(data => setBlogs(data))
+    }, [])
+    
     return (
         <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 '>
             {

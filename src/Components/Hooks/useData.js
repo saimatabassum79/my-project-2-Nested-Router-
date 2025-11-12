@@ -15,14 +15,9 @@ const useData = () => {
                  .then(data=>setCategory (data))
             },[])
 
-               const [blogs, setBlogs] = useState([])
-    useEffect(() => {
-        fetch('/BlogsData.json')
-            .then(res => res.json())
-            .then(data => setBlogs(data))
-    }, [])
+           
           
-    return {products,category,blogs}
+    return {products,category,}
 };
 
 export default useData;
