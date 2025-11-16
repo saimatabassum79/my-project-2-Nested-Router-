@@ -4,7 +4,6 @@ import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
 import sliderImg1 from '../../assets/slider-1.png';
 import sliderImg3 from '../../assets/slider-2 .png';
-
 import SendImg from '../../assets/icon-email-2.svg';
 
 const Banner = () => {
@@ -50,7 +49,7 @@ const Banner = () => {
 
             {/* ✅ Desktop / Tablet version (unchanged) */}
             <div className="absolute top-10 sm:top-20 left-6 sm:left-12 hidden sm:block">
-              <h1 className="text-2xl sm:text-4xl md:text-[50px] text-[#253D4E] font-semibold leading-tight">
+              <h1 className="text-2xl sm:text-4xl lg:mt-10 md:text-[50px] text-[#253D4E] font-semibold leading-tight">
                 Don’t Miss Amazing <br /> Grocery Deals
               </h1>
               <p className="text-gray-500 text-sm sm:text-lg mt-3">
@@ -106,7 +105,7 @@ const Banner = () => {
 
             {/* ✅ Desktop / Tablet version (unchanged) */}
             <div className="absolute top-10 sm:top-20 left-6 sm:left-12 hidden sm:block">
-              <h1 className="text-2xl sm:text-4xl md:text-[50px] text-[#253D4E] font-semibold leading-tight">
+              <h1 className="text-2xl sm:text-4xl lg:mt-10 md:text-[50px] text-[#253D4E] font-semibold leading-tight">
                 Fresh Vegetables <br /> Big Discount
               </h1>
               <p className="text-gray-500 text-sm sm:text-lg mt-3">

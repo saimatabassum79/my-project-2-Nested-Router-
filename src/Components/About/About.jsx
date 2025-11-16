@@ -23,7 +23,7 @@ import SmallCart from '../SmallCart/SmallCart';
 
 const About = () => {
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden mx-auto container lg:px-3 px-4">
             {/* first part */}
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:ml-20 my-8 px-6 lg:px-0">
                 <div className="flex justify-center">
@@ -104,7 +104,7 @@ const About = () => {
             </div>
 
             {/* five stats */}
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="mx-auto container lg:px-3 px-4">
                 <div className="relative rounded-3xl overflow-hidden bg-gradient-to-r from-[#667C70] to-[#667C70] p-10 sm:p-12 text-white">
                     <div
                         className="absolute inset-0 bg-cover bg-center opacity-30"

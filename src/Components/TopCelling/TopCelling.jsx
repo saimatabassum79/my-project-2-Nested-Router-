@@ -4,7 +4,7 @@ import { FaStar } from 'react-icons/fa6';
 const TopCelling = ({ products }) => {
     return (
         <div>
-            <div className="px-4 md:px-8 lg:px-2 lg:mt-0 mt-9">
+            <div className=" md:px-8  px-4 lg:px-3  mx-auto container  lg:mt-0 mt-9">
                 {/* Header Titles */}
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-between items-start text-center sm:text-left">
                     <div>

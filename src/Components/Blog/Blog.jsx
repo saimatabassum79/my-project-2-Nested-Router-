@@ -15,7 +15,7 @@ const Blog = () => {
     return (
         <div>
             <SmallBanner title="Blog & News" P1="Blog " P2="News" btn1="Shopping" btn2="Recips" btn3="KItchen" btn4="News" btn5="Food"></SmallBanner>
-            <div className='lg:flex flex-row items-center justify-between  my-2'>
+            <div className='lg:flex flex-row mx-auto container lg:px-3 px-4 items-center justify-between  my-2'>
                 <div className='flex items-center gap-5'>
                     <img className='lg:w-10 w-9' src={image} alt="" srcset="" />
                     <p className='font-bold lg:text-2xl text-[24px] '>Recips Articles</p>
@@ -29,7 +29,7 @@ const Blog = () => {
                     </p>
                 </div>
             </div>
-            <div className='grid lg:grid-cols-12 grid-cols-1 gap-3 '>
+            <div className='grid lg:grid-cols-12 grid-cols-1 mx-auto container lg:px-3 px-4 gap-3 '>
                 <div className='col-span-10'>
                 <Blogs></Blogs>
                   </div>

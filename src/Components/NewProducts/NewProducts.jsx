@@ -6,8 +6,8 @@ import useData from '../hook/useData';
 const NewProducts = () => {
     const { products } = useData();
     return (
-        <div className='border border-gray-300 rounded-xl p-3 lg:w-[200px] w-[350px]  mt-6 shadow-sm'>
-            <h1 className='font-bold lg:text-1xl text-2xl text-[#253D4E] ml-2'>New Products</h1>
+        <div className='border border-gray-300 rounded-xl p-3   mt-6 shadow-sm'>
+            <h1 className='font-bold lg:text-xl text-2xl text-[#253D4E] ml-2'>New Products</h1>
             <div className='border border-gray-300 h-0.1 my-2'>
                 <div className='border border-[#b9f4d8] w-20'></div>
             </div>

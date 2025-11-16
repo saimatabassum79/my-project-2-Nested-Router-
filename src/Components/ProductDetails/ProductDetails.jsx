@@ -16,7 +16,7 @@ const ProductDetails = () => {
     console.log(product);
 
     return (
-        <div className=''>
+        <div className='container mx-auto px-4 lg:px-3'>
             <div className="flex flex-col md:flex-row gap-8 bg-base-100 my-8 md:ml-40 p-4 md:p-8">
 
                 {/* Product Image */}

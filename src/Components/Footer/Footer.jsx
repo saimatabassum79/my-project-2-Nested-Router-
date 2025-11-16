@@ -19,7 +19,7 @@ import call from '../../assets/phone-call.svg'
 const Footer = () => {
   return (
     <footer className="bg-gray-50  mt-10">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-gray-700">
+      <div className="  py-12 grid  px-4 lg:px-3  mx-auto container grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-gray-700">
         {/* Brand Info */}
         <div>
           <div className="flex items-center gap-2 mb-4">
@@ -106,7 +106,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="border-t border-gray-300 py-4 bg-white">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-600">
+        <div className=" px-4 lg:px-3  mx-auto container  flex flex-col sm:flex-row justify-between items-center text-sm text-gray-600">
           <p>© 2025 <span className="font-semibold text-green-600">Nest Mart</span>. All rights reserved.</p>
 
                              <div className="flex items-center my-4 lg:my-0 gap-4">

@@ -11,10 +11,10 @@ const Contact = () => {
     return (
         <div>
             {/* first */}
-            <div className="space-y-16">
+            <div className="space-y-16 mx-auto container lg:px-3 px-4">
 
                 {/* How can we help section */}
-                <div className="flex flex-col lg:flex-row items-start gap-8 px-6 md:px-16 my-5">
+                <div className="flex flex-col lg:flex-row items-start gap-8 px-6 md:px-10 my-5">
                     <div className="lg:w-1/3">
                         <p className="text-[#3BB77E] font-semibold uppercase tracking-wide">
                             How can we help you?

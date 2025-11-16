@@ -10,13 +10,15 @@ import NewProducts from '../NewProducts/NewProducts';
 import Countdown from '../Countdown/Countdown';
 import Banner2 from '../Shared/Banner2';
 import SmallCart from '../SmallCart/SmallCart';
+import ShopDeals from '../Countdown/ShopDeals';
+import useData from '../hook/useData';
 
 const Shop = () => {
     const [select, setSelect] = useState()
     const handleCategory = (id) => {
         setSelect(id);
-
     }
+    const {products}=useData()
     return (
         <div>
             <SmallBanner
@@ -30,7 +32,7 @@ const Shop = () => {
                 btn5="Spinach"
             />
 
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between my-4 px-4 md:px-2">
+            <div className="flex flex-col  px-4 lg:px-3  mx-auto container md:flex-row items-start md:items-center justify-between my-4  md:px-2">
                 <p className="text-gray-500 text-[14px] md:text-[15px] mb-2 md:mb-0">
                     We found <span className="text-[#3BB77E]">29</span> items for you!
                 </p>
@@ -45,10 +47,10 @@ const Shop = () => {
                 </div>
             </div>
 
-            <div className='grid lg:grid-cols-12 grid-cols-1 gap-4'> 
+            <div className='grid  px-4 lg:px-3  mx-auto container lg:grid-cols-12 grid-cols-1 gap-4'> 
                 <div className='col-span-10'>
                      <ShopCard select={select}></ShopCard>
-                      <Countdown ml1="lg:ml-4 ml-11" ml2="lg:ml-3 ml-11" weidth="lg:w-55 w-65" p="p-3 lg:p-2" text="text-2xl text-sm" t="lg:top-23 top-15" top="lg:top-40 top-35"></Countdown> 
+                      <ShopDeals products={products}></ShopDeals>
                  </div> 
                     <div className='lg:col-span-2 '> 
                         <ShopCategory handleCategory={handleCategory}></ShopCategory> 

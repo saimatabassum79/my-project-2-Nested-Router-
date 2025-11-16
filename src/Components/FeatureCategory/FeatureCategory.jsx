@@ -21,7 +21,7 @@ const FeatureCategory = () => {
 
   return (
     <div >
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between text-gray-800 flex-wrap gap-4">
+      <div className="flex flex-col container mx-auto px-3 sm:flex-row items-start sm:items-center justify-between text-gray-800 flex-wrap gap-4">
         {/* Left Side - Title & Category Names */}
         <div className="flex flex-col sm:flex-row items-start sm:items-end gap-3 sm:gap-5">
           <h1 className="text-xl sm:text-2xl font-bold text-[#18181B]">
@@ -52,7 +52,7 @@ const FeatureCategory = () => {
       </div>
 
       {/* Category Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-10 gap-3 sm:gap-4 md:gap-5 my-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-10 gap-3 sm:gap-4 md:gap-5 my-6  px-4 lg:px-3  mx-auto container">
         {featureCategory.map((fc, i) => (
           <SmallCategory key={i} fc={fc} />
         ))}

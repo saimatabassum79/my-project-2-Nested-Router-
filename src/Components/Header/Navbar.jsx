@@ -25,7 +25,7 @@ const Navbar = () => {
       </div>
 
       {/* Main Section */}
-      <div className="flex justify-between items-center px-4 lg:px-3 py-3 mx-auto container">
+      <div className="flex justify-between items-center py-3 px-4 lg:px-3  mx-auto container">
         {/* Left: Menu Button (Mobile) */}
         <button
           className="md:hidden text-2xl text-gray-700"
@@ -78,26 +78,22 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Bottom Menu */}
-      <div className="hidden md:flex items-center justify-between px-4 lg:px-3 py-3 border-t border-gray-200 bg-white">
+      <div className="hidden md:flex items-center justify-between mx-auto
+       container px-4 lg:px-3 py-3 border-t border-gray-200 bg-white">
         <button className="flex items-center gap-2 bg-[#3BB77E] text-white px-4 py-2 rounded-md hover:bg-green-600 transition text-sm md:text-base">
           <FiGrid />
           <span className="font-medium">Browse All Categories</span>
         </button>
 
-        <ul className="flex items-center gap-4 lg:gap-6 font-medium text-gray-700">
-          <li>
-            <NavLink to="/deals" className={({ isActive }) => `${isActive ? "text-[#3BB77E]" : ""} flex items-center gap-2`}>
-              <img src={hotImg} alt="hot deals" />
-              <p className="font-semibold">Deals</p>
-            </NavLink>
-          </li>
+        <ul className="flex items-center gap-6 lg:gap-6 font-medium text-gray-700">
+        
           <li><NavLink to="/" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Home</NavLink></li>
           <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>About</NavLink></li>
           <li><NavLink to="/shop" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Shop</NavLink></li>
-          <li><NavLink to="/vendor" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Vendors</NavLink></li>
-          <li><NavLink to="/mega" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Mega Menu</NavLink></li>
+          
+         
           <li><NavLink to="/blog" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Blog</NavLink></li>
-          <li><NavLink to="/page" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Pages</NavLink></li>
+          
           <li><NavLink to="/contact" className={({ isActive }) => isActive ? "text-[#3BB77E] font-semibold" : "font-semibold"}>Contact</NavLink></li>
         </ul>
 

@@ -5,7 +5,7 @@ import BestCellCategory from './BestCellCategory';
 
 const BestCells = ({ products }) => {
     return (
-        <div className="px-4 md:px-8 lg:px-2">
+        <div className=" md:px-8  px-4 lg:px-3  mx-auto container">
             {/* Header Section */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                 <h1 className="text-2xl md:text-3xl font-bold text-[#18181B]">

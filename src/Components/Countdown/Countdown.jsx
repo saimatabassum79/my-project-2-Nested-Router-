@@ -42,7 +42,7 @@ const Countdown = ({ ml1, ml2, weidth, p, text, top ,t}) => {
 
 
     return (
-          <div className=''>
+          <div className=' px-4 lg:px-3  mx-auto container'>
             <div className='flex items-center justify-between mt-4'>
                 <h1 className='text-2xl font-bold text-[#18181B]'>Deals Of The Day</h1>
                 <div className='flex items-center gap-2 hover:text-[#3BB77E] cursor-pointer hover:-translate-y-1 duration-300 '>

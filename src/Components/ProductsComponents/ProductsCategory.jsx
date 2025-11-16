@@ -24,7 +24,7 @@ const ProductsCategory = () => {
 
   }
   return (
-    <div className="my-6 px-4 sm:px-6 lg:px-2">
+    <div className="my-6  px-4 lg:px-3  mx-auto container">
       {/* Header: Title + Category Filter */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0 my-3">
         <h1 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-800">

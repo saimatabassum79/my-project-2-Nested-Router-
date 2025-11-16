@@ -11,7 +11,7 @@ const ShopCard = ({select}) => {
       const filter = select?products.filter(product=>product.id==select):products
     
     return (
-        <div className='grid lg:grid-cols-5 grid-cols-1 gap-3 lg:px-0 px-2'>
+        <div className='grid lg:grid-cols-5 grid-cols-1  px-1 lg:px-3  mx-auto container gap-3 '>
            
             {
                 filter.slice(0,10).map(product => (

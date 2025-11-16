@@ -5,7 +5,7 @@ import { SiMinutemailer } from 'react-icons/si';
 
 const Banner2 = ({title,subtitle,highlight,bgImage1,image,w,mt,ml}) => {
     return (
-        <div>
+        <div className=' px-4 lg:px-3  mx-auto container'>
             <div style={{ backgroundImage: `url(${bgImage1})` }} className="hero  h-[350px] bg-cover rounded-2xl bg-center w-full my-4 ">
                 <div className="flex justify-between px-10 ">
 

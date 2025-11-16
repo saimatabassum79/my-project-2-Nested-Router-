@@ -4,7 +4,7 @@ import filterImg from '../../assets/fillter-widget-bg.png'
 
 const FillByPrice = () => {
     return (
-        <div className='border border-gray-300 rounded-xl lg:w-[200px] w-[350px]  p-3 my-6 shadow-sm'>
+        <div className='border border-gray-300 rounded-xl   p-3 my-6 shadow-sm'>
             <div className='mb-7'>
                 <h1 className='font-bold lg:text-1xl text-2xl text-[#253D4E] ml-2'>Fill By Price</h1>
                 <div className='border border-gray-300 h-0.1 my-2'>
