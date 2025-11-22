@@ -52,14 +52,14 @@ const Shop = () => {
                      <ShopCard select={select}></ShopCard>
                       <ShopDeals products={products}></ShopDeals>
                  </div> 
-                    <div className='lg:col-span-2 '> 
+                    <div className='lg:col-span-2 col-span-9'> 
                         <ShopCategory handleCategory={handleCategory}></ShopCategory> 
                         <FillByPrice></FillByPrice>
                          <NewProducts></NewProducts>
                     </div> 
             </div>
 
-            <Banner2 bgImage1={bgImage1} image={image} w="w-130" mt="mt-17" ml="ml-20" title={`Stay home & get your daily needs from our shop`} highlight="Nest Mart" subtitle="Start You'r Daily Shopping with " ></Banner2>
+            <Banner2 bgImage1={bgImage1} image={image} w="w-130" mt="mt-17" ml="ml-18" title={`Stay home & get your daily needs from our shop`} highlight="Nest Mart" subtitle="Start You'r Daily Shopping with " ></Banner2>
             <SmallCart></SmallCart>
         </div>
     );

@@ -1,12 +1,15 @@
 import React from 'react';
-import { FaCartShopping, FaStar } from 'react-icons/fa6';
+import { FaCartShopping, FaRegHeart, FaStar } from 'react-icons/fa6';
 import { Link } from 'react-router';
-
+import {useDispatch} from "react-redux"
+import { addToCart } from '../../redux/cartSlice';
+import { addToWishlist } from '../../redux/wishList';
 const Product = ({ product }) => {
+     const dispatch = useDispatch();
 
     return (
 
-        <Link to={`/products/${product.id}`}>
+        
             <div className="card bg-white relative transition-transform cursor-pointer hover:shadow-lg border pt-7 lg:pt-0 border-gray-200 rounded-2xl overflow-hidden">
 
             
@@ -48,19 +51,27 @@ const Product = ({ product }) => {
                     <p className="text-gray-400 text-xs sm:text-sm mt-1">
                         By: <span className="text-green-600">{product.brand}</span>
                     </p>
-
-                    {/* Price & Add Button */}
-                    <div className="flex items-center justify-between mt-3">
-                        <p className="text-green-600 font-bold text-sm sm:text-base">
+                      <p className="text-green-600 font-bold text-sm sm:text-base">
                             {product.price} <span className="line-through text-gray-400 text-xs sm:text-sm">{product.oldPrice}</span>
                         </p>
-                        <button className="flex items-center justify-center gap-1 text-green-600 bg-green-100 hover:bg-green-600 hover:text-white transition-all duration-300 py-1 px-3 sm:px-4 rounded-md text-xs sm:text-sm">
+                    {/* Price & Add Button */}
+                 
+                        
+                      <div className='flex items-center justify-between gap-2'>
+                         <button onClick={()=>dispatch(addToWishlist(product))} className="flex items-center justify-center gap-1 text-green-600 bg-green-100 hover:bg-green-600 hover:text-white transition-all duration-300 py-1 px-3 cursor-pointer sm:px-4 rounded-md text-xs sm:text-sm">
+                            <FaRegHeart /> 
+                        </button>
+                          <button onClick={()=>dispatch(addToCart(product))} className="flex items-center justify-center gap-1 text-green-600 bg-green-100 hover:bg-green-600 hover:text-white transition-all duration-300 py-1 px-3 cursor-pointer sm:px-4 rounded-md text-xs sm:text-sm">
                             <FaCartShopping /> Add
                         </button>
-                    </div>
+                        <Link to={`/products/${product.id}`}> <button  className="flex items-center justify-center gap-1 text-green-600 bg-green-100 hover:bg-green-600 hover:text-white transition-all duration-300 py-1 px-3 cursor-pointer sm:px-4 rounded-md text-xs sm:text-sm">
+                             Details
+                        </button></Link>
+                      </div>
+                    
                 </div>
             </div>
-        </Link>
+        
 
 
     );

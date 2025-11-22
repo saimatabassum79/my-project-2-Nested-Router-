@@ -13,8 +13,8 @@ const Banner2 = ({title,subtitle,highlight,bgImage1,image,w,mt,ml}) => {
                         <h1 className='lg:text-4xl text-2xl font-bold text-[#253D4E] '>{title} </h1>
                         <p className='text-[#7E7E7E] my-8 lg:text-[19px] text-[15px]'>{subtitle} <span className='text-[#3BB77E]'>{highlight}</span></p>
 
-                         <div className="flex items-center  ml-2 md:ml-0 bg-white rounded-full shadow-sm overflow-hidden mb-9 lg:mb-0 w-[280px] md:w-[400px]">
-                                    <div className="flex items-center px-3 md:px-4 text-gray-400">
+                         <div className="flex items-center  ml-0 md:ml-0 bg-white rounded-full shadow-sm overflow-hidden mb-9 lg:mb-0 w-[280px] md:w-[400px]">
+                                    <div className="flex items-center px-2  md:px-4 text-gray-400">
                                        <p><SiMinutemailer /></p>
                                     </div>
                                     <input

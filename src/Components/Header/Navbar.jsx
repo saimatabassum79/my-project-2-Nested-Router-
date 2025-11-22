@@ -7,9 +7,12 @@ import headPhnImg from '../../assets/icon-headphone.svg';
 
 import hotImg from '../../assets/icon-hot.svg';
 import Header from './Header';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
+import {useSelector} from 'react-redux'
 
 const Navbar = () => {
+  const count = useSelector((state)=>state.cart.count);
+  const count2 = useSelector((state)=>state.wishlist.count2)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -36,7 +39,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="flex items-center">
-          <img src={logoImg} alt="Nest Logo" className="w-28 sm:w-36" />
+        <Link to="/"><img src={logoImg} alt="Nest Logo" className="w-28 sm:w-36" /></Link>
         </div>
 
         {/* Search Bar (desktop only) */}
@@ -60,14 +63,15 @@ const Navbar = () => {
           {/* Wishlist */}
           <div className="relative">
             <FiHeart className="text-2xl" />
-            <span className="absolute -top-2 -right-2 bg-[#3BB77E] text-white text-xs rounded-full px-[6px]">4</span>
+            <span className="absolute -top-2 -right-2 bg-[#3BB77E] text-white text-xs rounded-full px-[6px]">{count2}</span>
           </div>
 
           {/* Cart */}
-          <div className="relative">
+         <Link to="/cartlist"> <div className="relative">
             <FiShoppingCart className="text-2xl" />
-            <span className="absolute -top-2 -right-2 bg-[#3BB77E] text-white text-xs rounded-full px-[6px]">2</span>
+            <span className="absolute -top-2 -right-2 bg-[#3BB77E] text-white text-xs rounded-full px-[6px]">{count}</span>
           </div>
+         </Link>
 
           {/* Account (desktop only) */}
           <div className="hidden md:flex items-center gap-1">
@@ -80,7 +84,7 @@ const Navbar = () => {
       {/* Desktop Bottom Menu */}
       <div className="hidden md:flex items-center justify-between mx-auto
        container px-4 lg:px-3 py-3 border-t border-gray-200 bg-white">
-        <button className="flex items-center gap-2 bg-[#3BB77E] text-white px-4 py-2 rounded-md hover:bg-green-600 transition text-sm md:text-base">
+        <button className="flex items-center gap-2 bg-[#3BB77E] text-white px-4 py-2 rounded-md hover:bg-[#338e64] transition text-sm md:text-base">
           <FiGrid />
           <span className="font-medium">Browse All Categories</span>
         </button>

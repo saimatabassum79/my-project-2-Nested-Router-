@@ -19,7 +19,7 @@ import call from '../../assets/phone-call.svg'
 const Footer = () => {
   return (
     <footer className="bg-gray-50  mt-10">
-      <div className="  py-12 grid  px-4 lg:px-3  mx-auto container grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-gray-700">
+      <div className="  py-12 grid  px-6 lg:px-3  mx-auto container grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-gray-700">
         {/* Brand Info */}
         <div>
           <div className="flex items-center gap-2 mb-4">

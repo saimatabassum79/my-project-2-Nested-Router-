@@ -12,6 +12,9 @@ import ProductDetails from './Components/ProductDetails/ProductDetails';
 import Vendors from './Components/Page/Vendors';
 import Mega from './Components/Page/Mega';
 import Pages from './Components/Page/Pages';
+import { Provider } from 'react-redux';
+import {store} from "./Components/redux/store"
+import CartPage from './Components/Cart/CartPage';
 
 
 
@@ -33,6 +36,10 @@ const router = createBrowserRouter([
       {path:"/products/:id",
         loader:()=>fetch("/Produts.json"),
         element:<ProductDetails></ProductDetails>
+      },
+      {
+        path:"/cartlist",
+        Component:CartPage
       }
     ]
   },
@@ -41,7 +48,9 @@ const router = createBrowserRouter([
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
-  <RouterProvider router={router} />,
+ <Provider store={store}>
+   <RouterProvider router={router} />
+ </Provider>
 );
 
 

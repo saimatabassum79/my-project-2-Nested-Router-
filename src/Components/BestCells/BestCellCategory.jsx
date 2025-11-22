@@ -1,7 +1,10 @@
 import React from 'react';
 import { FaCartShopping, FaStar } from 'react-icons/fa6';
+import {useDispatch}from 'react-redux';
+import { addToCart } from '../redux/cartSlice';
 
 const BestCellCategory = ({ product }) => {
+    const dispatch = useDispatch();
 
     return (
         <div>
@@ -41,7 +44,7 @@ const BestCellCategory = ({ product }) => {
 
                     <p className='text-[12px] my-1'>Sold : 90/120</p>
 
-                    <button className=' btn w-30 rounded-md text-[12px]   text-white bg-[#3BB77E] hover:bg-[#FDC040] hover:-translate-y-1 duration-500'> <span className=''><FaCartShopping /></span>Add to cart</button>
+                    <button onClick={()=>dispatch(addToCart(product))}  className=' btn w-30 rounded-md text-[12px]   text-white bg-[#3BB77E] hover:bg-[#FDC040] hover:-translate-y-1 duration-500'> <span className=''><FaCartShopping /></span>Add to cart</button>
 
 
                 </div>
